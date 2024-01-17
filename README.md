@@ -9,11 +9,11 @@ Many image editing tools like Photoshop let the user perform some special filter
 ### Smoothing
 Gaussian Filter as its name implies, has the shape of the function ‘Gaussian distribution’ to define the weights inside the kernel, which are used to compute the weighted average of the neighboring points (pixels) in an image.
 <p align="center"> 
-<img src=https://github.com/akifozgur/using-image-pyramid-for-image-blending/blob/main/img/gaussian.png>
+<img src=https://github.com/akifozgur/cartoon-effect-to-colorful-images/blob/main/img/gaussian.png>
 </p>
 In other words, each value in the Gaussian filter is from the zero mean Gaussian distribution. One thing we need to keep in mind is that the kernel size is dependent of standard deviation 𝛔 of Gaussian function:
 <p align="center"> 
-<img src=https://github.com/akifozgur/using-image-pyramid-for-image-blending/blob/main/img/sigma.png>
+<img src=https://github.com/akifozgur/cartoon-effect-to-colorful-images/blob/main/img/sigma.png>
 </p>
 Median Filter is one of Non-linear filters, which is also used for smoothing. Its basic idea is to replace each pixel by the median of its neighboring pixels.
 By doing so, it removes some spikes introduced by noise: especially impulse and salt & pepper noise. This is because stand- alone noise pixels with extreme intensities like black and white cannot survive after median filtering. Another advantage of median filter is that it does not introduce new pixel values since it only re-use existing pixel values from window.
@@ -33,7 +33,7 @@ identify edges in the image. It emphasizes significant changes in pixel
 values, particularly sudden transitions found at edges. The resulting
 DoG image is subjected to a thresholding process to determine edges.
 <p align="center"> 
-<img src=https://github.com/akifozgur/using-image-pyramid-for-image-blending/blob/main/img/edge.png>
+<img src=https://github.com/akifozgur/cartoon-effect-to-colorful-images/blob/main/img/edge.png>
 </p>
 
 ### Image Quantization
@@ -86,7 +86,7 @@ with the quantized image. In this way, I obtained images with clearer
 edges and more cartoon-like appearance.
 
 <p align="center"> 
-<img src=https://github.com/akifozgur/using-image-pyramid-for-image-blending/blob/main/img/result.png>
+<img src=https://github.com/akifozgur/cartoon-effect-to-colorful-images/blob/main/img/result.png>
 </p>
 
 
